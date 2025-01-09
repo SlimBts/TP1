@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(204, 199, 207)
+}
+
+.h {
+    display: flex;
+    justify-content: center;
+}
+
+.image-ronde {
+  width : 1; height : 150px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+}
+
+.image-pos {
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(108, 108, 109);
+}
+
+.ul {
+    font-family: Impact; 
+}
+.p1 {
+    color: rgb(124, 57, 57);
+    font-size: 1.8em;
+}
+.p2 {
+    font-size: 1.2em;
+}
+
+.p3 {
+    font-size: 23px
+}
+
+.f1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
