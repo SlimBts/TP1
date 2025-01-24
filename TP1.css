@@ -1,46 +1,138 @@
 body {
-    background-color: rgb(204, 199, 207)
+    background-color: rgb(204, 199, 207); /* Changing the web page background color. */
+    margin: auto;
+    padding: 0 18px; /* Combine left and right padding for simplicity */
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .h {
     display: flex;
-    justify-content: center;
-}
-
-.image-ronde {
-  width : 1; height : 150px;
-  border: none;
-  -moz-border-radius : 75px;
-  -webkit-border-radius : 75px;
-  border-radius : 75px;
-}
-
-.image-pos {
-    display: flex;
+    justify-content: center; /* Center the title at the middle of the web page */
     text-align: center;
+}
+
+.image-style {
+    width: 150px; /* Define a fixed width for the image */
+    height: 150px;
+    border: none;
+    -moz-border-radius: 50%; /* Make the image perfectly circular */
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.img-1:hover {
+    box-shadow: 20px 20px 100px rgb(88, 60, 100);
 }
 
 h1 {
     color: rgb(108, 108, 109);
+    position: relative;
+    left: -35px;
+    text-align: center;
 }
 
-.ul {
-    font-family: Impact; 
+.ul1 {
+    font-family: Impact;
+    background-color:rgb(139, 144, 146);
+    border-radius: 30% 70% 70% 30% /30% 58% 42% 70%;
+    box-shadow: 20px 20px 40px rgb(126, 104, 136);
+    padding: 30px;
+    position: relative;
+    right: 30px;
+    top: 20px
 }
-.p1 {
+
+.li_pos1 {
+    position: relative;
+    left: 10px;
+}
+
+h2 {
     color: rgb(124, 57, 57);
     font-size: 1.8em;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    text-shadow: 10px 10px 10px rgb(126, 104, 136);
 }
-.p2 {
+
+.container {
     font-size: 1.2em;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add spacing between grid items */
+}
+
+.box {
+    height: auto; /* Make height adaptable */
+    text-align: justify;
+    padding: 10px;
+    background: #beb5bc; /* Optional: Add background for better visibility */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .p3 {
-    font-size: 23px
+    font-size: 1.4rem; /* Use responsive font size */
+    position: relative;
+    top: 30px;
 }
 
 .f1 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    font-size: 1.2rem; /* Responsive font size */
+    position: relative;
+    top: 20px;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    background-color: rgb(95, 129, 110);
+}
+
+.box:hover {
+    box-shadow: 20px 20px 100px rgb(88, 60, 100);
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .h {
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        left: 0;
+        font-size: 1.5em; /* Adjust title size for smaller screens */
+    }
+
+    .ul1 {
+        max-width: 100%; /* Allow the box to take full width on small screens */
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .p3 {
+        font-size: 1.2rem; /* Adjust paragraph font size */
+    }
 }
